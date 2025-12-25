@@ -21,7 +21,7 @@
     text-align: center
 }
 
-.wp-block-audio {
+/* .wp-block-audio {
     box-sizing: border-box
 }
 
@@ -33,7 +33,7 @@
 .wp-block-audio audio {
     min-width: 300px;
     width: 100%
-}
+} */
 
 .wp-block-button__link {
     box-sizing: border-box;
