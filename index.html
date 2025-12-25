@@ -8,7 +8,7 @@
 
     <link rel='dns-prefetch' href='//cdn.jsdelivr.net'>
     <link rel='dns-prefetch' href='//unpkg.com'>
-    <link rel="alternate" type="application/rss+xml" title="Wedding An Yami & Thu Buzzy &raquo;">
+    <link rel="alternate" type="application/rss+xml" title="Julie Jones & Oren Anderson &raquo;">
 
     <script>
         window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/thiepdientu.com.vn\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.4" } };
@@ -448,7 +448,7 @@
 
 <body
     class="mau-thiep-template mau-thiep-template-templates mau-thiep-template-korea mau-thiep-template-templateskorea-php single single-mau-thiep postid-154 no-sidebar">
-    <div id="welcome-modal"
+    <!-- <div id="welcome-modal"
         style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); display: flex; align-items: center; justify-content: center; z-index: 10000;">
         <div
             style="background: white; padding: 30px 40px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); text-align: center;">
@@ -463,7 +463,7 @@
                 Start
             </button>
         </div>
-    </div>
+    </div> -->
 
     <!-- HEADER -->
     <header>
@@ -480,41 +480,51 @@
                     </div>
 
                     <div class="banner-name">
-                        An Yami<br>
+                        Julie Jones<br>
                         &<br>
-                        Thu Buzzy
+                        Oren Anderson
                     </div>
 
                     <div class="banner-date">
                         <div class="group-date">
                             <span class="day_name">
-                                Thursday
+                                Saturday
                             </span>
 
                             <span class="banner_date">
-                                27
+                                19
                             </span>
 
                             <span class="banner_time">
-                                10:10 AM
+                                12:00 pm
                             </span>
                         </div>
 
                         <span class="banner_month">
-                            02
+                            09
                         </span>.
 
                         <span class="banner_year">
-                            2025
+                            2026
                         </span>
 
                         <div class="group-add">
                             <p>
-                                Event venue
+                                Ceremony Location
                             </p>
 
                             <span class="banner_location_adress">
-                                KP Tân Thạnh, Xuân Đài, Sông Cầu, Phú Yên
+                                Baughman Center, 982 Museum Rd, Gainesville, FL 32603
+                            </span>
+                        </div>
+
+                        <div class="group-add">
+                            <p>
+                                Reception Venue
+                            </p>
+
+                            <span class="banner_location_adress">
+                                The Wooly, 20 N Main St, Gainesville, FL 32601
                             </span>
                         </div>
                     </div>
@@ -1524,54 +1534,55 @@
     <!-- END AUDIO -->
 
     <script>
-        document.body.style.overflow = 'hidden';
+        // document.body.style.overflow = 'hidden';
 
-        const startBtn = document.getElementById('startButton');
-        const audio = document.getElementById('audio');
-        const welcomeModal = document.getElementById('welcome-modal');
-        const toggleAudioBtn = document.querySelector('.toggleAudio');
-        const toggleIcon = toggleAudioBtn?.querySelector('i');
+        // const startBtn = document.getElementById('startButton');
+        // const audio = document.getElementById('audio');
+        // const welcomeModal = document.getElementById('welcome-modal');
+        // const toggleAudioBtn = document.querySelector('.toggleAudio');
+        // const toggleIcon = toggleAudioBtn?.querySelector('i');
 
-        window.addEventListener('load', () => window.scrollTo(0, 0));
+        // window.addEventListener('load', () => window.scrollTo(0, 0));
+        document.body.style.overflow = 'auto';
 
-        if (startBtn) {
-            startBtn.addEventListener('click', () => {
-                audio?.play();
+        // if (startBtn) {
+        //     startBtn.addEventListener('click', () => {
+        //         audio?.play();
 
-                if (welcomeModal) welcomeModal.style.display = 'none';
+        //         if (welcomeModal) welcomeModal.style.display = 'none';
 
-                document.body.style.overflow = 'auto';
-            });
-        }
+        //         document.body.style.overflow = 'auto';
+        //     });
+        // }
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const videos = document.querySelectorAll('video');
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     const videos = document.querySelectorAll('video');
 
-            const updateAudioIcon = (isMuted) => {
-                toggleIcon?.classList.toggle('ri-volume-mute-fill', isMuted);
-                toggleIcon?.classList.toggle('ri-volume-up-fill', !isMuted);
-            };
+        //     const updateAudioIcon = (isMuted) => {
+        //         toggleIcon?.classList.toggle('ri-volume-mute-fill', isMuted);
+        //         toggleIcon?.classList.toggle('ri-volume-up-fill', !isMuted);
+        //     };
 
-            videos.forEach((video) => {
-                video.addEventListener('play', () => {
-                    toggleAudioBtn.disabled = true;
-                    audio?.pause();
-                    updateAudioIcon(true);
-                });
+        //     videos.forEach((video) => {
+        //         video.addEventListener('play', () => {
+        //             toggleAudioBtn.disabled = true;
+        //             audio?.pause();
+        //             updateAudioIcon(true);
+        //         });
 
-                video.addEventListener('pause', () => {
-                    toggleAudioBtn.disabled = false;
-                    audio?.play();
-                    updateAudioIcon(false);
-                });
+        //         video.addEventListener('pause', () => {
+        //             toggleAudioBtn.disabled = false;
+        //             audio?.play();
+        //             updateAudioIcon(false);
+        //         });
 
-                video.addEventListener('ended', () => {
-                    toggleAudioBtn.disabled = false;
-                    audio?.play();
-                    updateAudioIcon(false);
-                });
-            });
-        });
+        //         video.addEventListener('ended', () => {
+        //             toggleAudioBtn.disabled = false;
+        //             audio?.play();
+        //             updateAudioIcon(false);
+        //         });
+        //     });
+        // });
 
         document.addEventListener('lazybeforeunveil', function (e) {
             const element = e.target;
