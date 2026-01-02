@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;300;400;600;800&family=Quicksand:wght@300;400;600;700&family=WindSong&display=swap');
 
+@font-face {
+    font-family: 'FluerDeLeah';
+    src: url('/Fonts/Fleur_De_Leah/FleurDeLeah-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --max-width: 1024px;
     /* color */
@@ -21,14 +29,14 @@
     /* fontsize */
     --biger-size: 40px;
     --larger-title: ;
-    --title-fs: 24px;
+    --title-fs: 30px;
     --subtitle-fs: ;
     --menu-fs: ;
     --body-fs: ;
     --small-fs: ;
 
     /* font-family */
-    --script-font: 'WindSong', cursive;
+    --script-font: 'FluerDeLeah', cursive;
     --primary-font: 'Quicksand', sans-serif;
     --title-font: 'Noto Serif Display', serif;
 
@@ -51,7 +59,7 @@
         /* fontsize */
         --biger-size: 50px;
         --larger-title: ;
-        --title-fs: 24px;
+        --title-fs: 30px;
         --subtitle-fs: ;
         --menu-fs: ;
         --body-fs: ;
@@ -70,7 +78,7 @@
         /* fontsize */
         --biger-size: 52px;
         --larger-title: ;
-        --title-fs: 32px;
+        --title-fs: 38px;
         --subtitle-fs: ;
         --menu-fs: ;
         --body-fs: ;
@@ -88,7 +96,7 @@
         /* fontsize */
         --biger-size: 58px;
         --larger-title: ;
-        --title-fs: 32px;
+        --title-fs: 38px;
         --subtitle-fs: ;
         --menu-fs: ;
         --body-fs: ;
@@ -106,7 +114,7 @@
         /* fontsize */
         --biger-size: 61px;
         --larger-title: ;
-        --title-fs: 32px;
+        --title-fs: 38px;
         --subtitle-fs: ;
         --menu-fs: ;
         --body-fs: ;
@@ -798,7 +806,7 @@ main {
 }
 
 .group-add p {
-    font-size: 16px;
+    font-size: 35px;
     font-weight: 300;
     font-family: var(--script-font);
 }
