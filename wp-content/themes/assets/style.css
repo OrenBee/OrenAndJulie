@@ -807,13 +807,16 @@ main {
 
 .group-add p {
     font-size: 35px;
-    font-weight: 300;
+    font-weight: 350;
     font-family: var(--script-font);
+    text-shadow: 0 0 12px black;
+    /* -webkit-text-stroke: 0.3px black; */
 }
 
 .group-add .banner_location_adress {
     font-size: 16px;
     font-weight: 300;
+    text-shadow: 0 0 12px black;
 }
 
 /* ABOUT */
