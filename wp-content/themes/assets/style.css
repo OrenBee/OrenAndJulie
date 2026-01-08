@@ -27,7 +27,7 @@
     --hot-color: ;
 
     /* fontsize */
-    --biger-size: 40px;
+    --biger-size: 35px;
     --larger-title: ;
     --title-fs: 30px;
     --subtitle-fs: ;
@@ -57,7 +57,7 @@
 @media only screen and (min-width: 540px) {
     :root {
         /* fontsize */
-        --biger-size: 50px;
+        --biger-size: 45px;
         --larger-title: ;
         --title-fs: 30px;
         --subtitle-fs: ;
@@ -76,7 +76,7 @@
 @media only screen and (min-width: 768px) {
     :root {
         /* fontsize */
-        --biger-size: 52px;
+        --biger-size: 47px;
         --larger-title: ;
         --title-fs: 38px;
         --subtitle-fs: ;
@@ -94,7 +94,7 @@
 @media only screen and (min-width: 1024px) {
     :root {
         /* fontsize */
-        --biger-size: 58px;
+        --biger-size: 53px;
         --larger-title: ;
         --title-fs: 38px;
         --subtitle-fs: ;
@@ -112,7 +112,7 @@
 @media only screen and (min-width: 1280px) {
     :root {
         /* fontsize */
-        --biger-size: 61px;
+        --biger-size: 56px;
         --larger-title: ;
         --title-fs: 38px;
         --subtitle-fs: ;
@@ -725,7 +725,6 @@ main {
 .banner-container {
     width: 90%;
     max-width: 500px;
-    max-height: 95vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -734,7 +733,7 @@ main {
     z-index: 9;
     display: flex;
     flex-direction: column;
-    /* gap: 40px; */
+    gap: 3vh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -744,7 +743,7 @@ main {
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     border-radius: 12px;
-    background-color: rgba(0, 0, 0, 0.237);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .banner-title {
