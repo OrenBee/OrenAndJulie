@@ -11,9 +11,9 @@
 :root {
     --max-width: 1024px;
     /* color */
-    --bg: #fcf5f2;
-    --primary-color: #6D3E28;
-    --secondary-color: #6D3E28;
+    --bg: #e1eee5;
+    --primary-color: #436b39;
+    --secondary-color: #436b39;;
     --text-white: #fff;
     --text-black: #000;
     --text-gray: #6e6e6e;
