@@ -1375,29 +1375,48 @@
         <h2 class="section-title">
             Frequently Asked Questions:
         </h2>
-        <p class="subtitle">
-            1. If you would like to bring gifts, please hold on to them till you arrive at the reception venue
-        </p>
-        <p class="subtitle">
-            2. The dresscode is: Formal / Black-Tie Optional
-        </p>
-        <p class="subtitle">
-            3. We will be having an unplugged ceremony. This is so everyone can be fully present in the moment.
-            This means that we ask that you turn off your phones and cameras to avoid distractions for us and our other guests.
-        </p>
-        <p class="subtitle">
-            4. We will be having an unplugged ceremony. This is so everyone can be fully present in the moment.
-            This means that we ask that you turn off your phones and cameras to avoid distractions for us and our other guests.
-        </p>
-        <p class="subtitle">
-            5. For suggestions on parking or any questions about location refer to the section above this one. 
-        </p>
-        <p class="subtitle">
-            x. If you have any additional questions, please email us at <div class="email">ad@<span>email.</span>spencermortensen.<span>example.</span>com</div>
-        </p>
-        <p class="subtitle">
-            We will be updating this list as quesitons come in!
-        </p>
+        <div class="faq-item">
+            <button class="faq-question">Where Should I Send Gift Registry Items?</button>
+            <div class="faq-answer">
+                <p>If you would like to bring us a gift, rather than send it directly, please hold on to it till you arrive at the reception venue.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">What is the Dress Code?</button>
+            <div class="faq-answer">
+                <p>Formal / Black-Tie Optional.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">What is An Unplugged Ceremony?</button>
+            <div class="faq-answer">
+                <p>We will be having an unplugged ceremony. This is so everyone can be fully present in the moment.
+            This means that we ask that you turn off your phones and cameras to avoid distractions for us and our other guests.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Where Should I Park?</button>
+            <div class="faq-answer">
+                <p>For suggestions on parking or any questions about location refer to the section above this one.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Is This List Up To Date?</button>
+            <div class="faq-answer">
+                <p>FWe will be updating this list as quesitons come in!</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <button class="faq-question">Any Additional Questions?</button>
+            <div class="faq-answer">
+                <p>If you have any additional questions, please email us at: <div class="email">ad@<span>email.</span>spencermortensen.<span>example.</span>com</div></p>
+            </div>
+        </div>
             
     </section>
     <!-- FAQ CODE -->
@@ -1575,6 +1594,22 @@
         </i>
     </button> -->
     <!-- END AUDIO -->
+
+    <script>
+        document.querySelectorAll(".faq-question").forEach(button => {
+            button.addEventListener("click", () => {
+                const answer = button.nextElementSibling;
+
+                button.classList.toggle("active");
+
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
 
     <script>
         // document.body.style.overflow = 'hidden';

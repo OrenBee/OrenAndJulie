@@ -1193,6 +1193,50 @@ main {
 
 /* FAQ Start */
 
+.FAQ-code {
+    max-width: 800px;
+    align-self: center;
+    margin: auto
+}
+
+.faq-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center; /* centers question text */
+    position: relative;
+}
+
+.faq-question::after {
+    content: "+";
+    position: absolute;
+    right: 15px;
+}
+
+.faq-question.active::after {
+    content: "−";
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    text-align: center; /* centers answer text */
+}
+
+.faq-answer p {
+    padding: 0 20px 15px;
+    margin: 0;
+}
+
 /* .FAQ-code {
 
 } */
