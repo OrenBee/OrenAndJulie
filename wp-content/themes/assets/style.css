@@ -865,6 +865,7 @@ main {
             transparent);
     color: var(--text-white);
     min-width: 100%;
+    text-shadow: 0 0 20px black;
 }
 
 .about-body h3 {
@@ -1189,6 +1190,24 @@ main {
 }
 
 /* end Gá»¬I QUĂ  */
+
+/* FAQ Start */
+
+/* .FAQ-code {
+
+} */
+
+div.email > span:nth-child(2) {
+	display: none;
+}
+
+/* FAQ End */
+
+
+
+
+
+
 /* THANK YOU */
 .section-thankyou {
     position: relative;
