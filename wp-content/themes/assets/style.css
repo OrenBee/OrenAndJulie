@@ -822,7 +822,6 @@ main {
 
 /* ABOUT */
 #about {
-    margin-top: 80px;
     min-height: 50vh;
 }
 
@@ -1066,6 +1065,8 @@ main {
     background-size: cover;
     width: 50%;
     height: auto;
+    filter: blur(2px) brightness(0.7);
+    transition: filter 0.8s ease;
 }
 
 .album-slide .swiper-slide img {
@@ -1073,7 +1074,6 @@ main {
     width: 100%;
     border-radius: 12px;
 }
-
 
 /* INVITATION */
 .invitation {
@@ -1191,9 +1191,75 @@ main {
 
 /* end Gá»¬I QUĂ  */
 
+/* Visiting Gainesville CODE */
+.visiting-gainesville-code {
+    padding-top: 80px;
+}
+
+.gainesville-about-card {
+    position: relative;
+    aspect-ratio: 1/1.2;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
+
+.gainesville-about-top {
+    height: max(30px, 10%);
+}
+
+.gainesville-about-med {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    border: 0;
+    /* object-fit: cover; */
+    /* object-position: center top; */
+}
+
+.gaiensville-about-bot {
+    height: max(30px, 10%);
+}
+
+.gainesville-about-card-top {
+    padding: 16px 20px;
+    background-color: var(--primary-color);
+}
+
+.card-label {
+    margin: 0 0 2px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.card-venue {
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-white);
+}
+
+.card-time {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* Visiting Gainesville CODE */
+
+
 /* FAQ Start */
 
 .FAQ-code {
+    padding-top: 30px;
+    padding-bottom: 60px;
     max-width: 800px;
     align-self: center;
     margin: auto

@@ -9,6 +9,7 @@ var swiper1 = new Swiper(".album-slide", {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
+    speed: 400,
     coverflowEffect: {
         rotate: 50,
         stretch: 0,
@@ -17,10 +18,46 @@ var swiper1 = new Swiper(".album-slide", {
         slideShadows: true,
     },
     autoplay: {
-        delay: 3000,
+        delay: 10000,
+    },
+    on: {
+        slideChange: function () {
+            this.slides.forEach((slide, index) => {
+                if (index === this.activeIndex) {
+                    slide.style.filter = "blur(0px) brightness(1)";
+                } else {
+                    slide.style.filter = "blur(3px) brightness(0.7)";
+                }
+            });
+        },
+        slideChangeTransitionStart: function () {
+            this.slides.forEach((slide, index) => {
+                if (index === this.activeIndex) {
+                    slide.style.filter = "blur(0px) brightness(1)";
+                } else {
+                    slide.style.filter = "blur(3px) brightness(0.7)";
+                }
+            });
+        },
+        slideChangeTransitionEnd: function () {
+            this.slides.forEach((slide, index) => {
+                if (index === this.activeIndex) {
+                    slide.style.filter = "blur(0px) brightness(1)";
+                } else {
+                    slide.style.filter = "blur(3px) brightness(0.7)";
+                }
+            });
+        },
     },
 });
 
+swiper1.slides.forEach((slide, index) => {
+    if (index === swiper1.activeIndex) {
+        slide.style.filter = "blur(0px) brightness(1)";
+    } else {
+        slide.style.filter = "blur(3px) brightness(0.7)";
+    }
+});
 
 // FANCY BOX
 Fancybox.bind("[data-fancybox]", {
